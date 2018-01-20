@@ -1,6 +1,6 @@
 [Protocol]
-exec=pivx-qt '%u'
-protocol=pivx
+exec=mota-qt '%u'
+protocol=mota
 input=none
 output=none
 helper=true

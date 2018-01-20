@@ -1,19 +1,19 @@
 [Unit]
-Description=PIVX's distributed currency daemon
+Description=MOTA's distributed currency daemon
 After=network.target
 
 [Service]
-User=pivx
-Group=pivx
+User=mota
+Group=mota
 
 Type=forking
-PIDFile=/var/lib/pivxd/pivxd.pid
+PIDFile=/var/lib/motad/motad.pid
 
-ExecStart=/usr/bin/pivxd -daemon -pid=/var/lib/pivxd/pivxd.pid \
-          -conf=/etc/pivx/pivx.conf -datadir=/var/lib/pivxd
+ExecStart=/usr/bin/motad -daemon -pid=/var/lib/motad/motad.pid \
+          -conf=/etc/mota/mota.conf -datadir=/var/lib/motad
 
-ExecStop=-/usr/bin/pivx-cli -conf=/etc/pivx/pivx.conf \
-         -datadir=/var/lib/pivxd stop
+ExecStop=-/usr/bin/mota-cli -conf=/etc/mota/mota.conf \
+         -datadir=/var/lib/motad stop
 
 Restart=always
 PrivateTmp=true

@@ -36,7 +36,7 @@ couldn't mess with the sources.
 
 Setup
 ---------
-Configuring the github-merge tool for the PIVX repository is done in the following way:
+Configuring the github-merge tool for the MOTA repository is done in the following way:
 
     git config githubmerge.repository Crestington/mota
     git config githubmerge.testcmd "make -j4 check" (adapt to whatever you want to use for testing)
@@ -45,7 +45,7 @@ Configuring the github-merge tool for the PIVX repository is done in the followi
 optimize-pngs.py
 ================
 
-A script to optimize png files in the PIVX
+A script to optimize png files in the MOTA
 repository (requires pngcrush).
 
 fix-copyright-headers.py
@@ -93,10 +93,10 @@ If only supported symbols are used the return value will be 0 and the output wil
 
 If there are 'unsupported' symbols, the return value will be 1 a list like this will be printed:
 
-    .../64/test_pivx: symbol memcpy from unsupported version GLIBC_2.14
-    .../64/test_pivx: symbol __fdelt_chk from unsupported version GLIBC_2.15
-    .../64/test_pivx: symbol std::out_of_range::~out_of_range() from unsupported version GLIBCXX_3.4.15
-    .../64/test_pivx: symbol _ZNSt8__detail15_List_nod from unsupported version GLIBCXX_3.4.15
+    .../64/test_mota: symbol memcpy from unsupported version GLIBC_2.14
+    .../64/test_mota: symbol __fdelt_chk from unsupported version GLIBC_2.15
+    .../64/test_mota: symbol std::out_of_range::~out_of_range() from unsupported version GLIBCXX_3.4.15
+    .../64/test_mota: symbol _ZNSt8__detail15_List_nod from unsupported version GLIBCXX_3.4.15
 
 update-translations.py
 ======================

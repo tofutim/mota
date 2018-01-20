@@ -1698,9 +1698,9 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/pivx-project/pivx-project-translations</source>
+https://www.transifex.com/mota-project/mota-project-translations</source>
         <translation>Sprache fehlt oder ist unvollständig? Helfe mit und trage zur Übersetzung hier bei:
-https://www.transifex.com/pivx-project/pivx-project-translations</translation>
+https://www.transifex.com/mota-project/mota-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
