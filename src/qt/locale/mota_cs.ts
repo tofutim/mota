@@ -1438,24 +1438,24 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Vyberte úrpvěň ochrany soukromí</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 PIV</source>
-        <translation>Použí 2 oddělené masternody k promíchání prostředků až do 10000 PIV</translation>
+        <source>Use 2 separate masternodes to mix funds up to 25000 PIV</source>
+        <translation>Použí 2 oddělené masternody k promíchání prostředků až do 25000 PIV</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Použít 16 oddělených masternodů</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 PIV to anonymize 10000 PIV</source>
-        <translation>Tato možnost je nejrychleší a bude stát zhruba ~0.025 PIV pro anonymizaci 10000 PIV</translation>
+        <source>This option is the quickest and will cost about ~0.025 PIV to anonymize 25000 PIV</source>
+        <translation>Tato možnost je nejrychleší a bude stát zhruba ~0.025 PIV pro anonymizaci 25000 PIV</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Toto je nejpomalejší a nejvíce bezpečná volba. Použití maximalní anonymity bude stát</translation>
     </message>
     <message>
-        <source>0.1 PIV per 10000 PIV you anonymize.</source>
-        <translation>0.1 PIV za 10000 PIV anonymizujete.</translation>
+        <source>0.1 PIV per 25000 PIV you anonymize.</source>
+        <translation>0.1 PIV za 25000 PIV anonymizujete.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
