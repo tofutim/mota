@@ -1072,7 +1072,7 @@ void FindMints(vector<CZerocoinMint> vMintsToFind, vector<CZerocoinMint>& vMints
                 continue;
 
             list<CZerocoinMint> vMints;
-            if(!BlockToZerocoinMintList(block, vMints, true))
+            if(!BlockToZerocoinMintList(block, vMints))
                 continue;
 
             // search the blocks mints to see if it contains the mint that is requesting meta data updates
@@ -2198,7 +2198,41 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
 
         if (mNodeCoins == 0) {
             ret = 0;
-        {
+        } else if (nHeight <= 325000) {
+            if (mNodeCoins <= (nMoneySupply * .05) && mNodeCoins > 0) {
+                ret = blockValue * .85;
+            } else if (mNodeCoins <= (nMoneySupply * .1) && mNodeCoins > (nMoneySupply * .05)) {
+                ret = blockValue * .8;
+            } else if (mNodeCoins <= (nMoneySupply * .15) && mNodeCoins > (nMoneySupply * .1)) {
+                ret = blockValue * .75;
+            } else if (mNodeCoins <= (nMoneySupply * .2) && mNodeCoins > (nMoneySupply * .15)) {
+                ret = blockValue * .7;
+            } else if (mNodeCoins <= (nMoneySupply * .25) && mNodeCoins > (nMoneySupply * .2)) {
+                ret = blockValue * .65;
+            } else if (mNodeCoins <= (nMoneySupply * .3) && mNodeCoins > (nMoneySupply * .25)) {
+                ret = blockValue * .6;
+            } else if (mNodeCoins <= (nMoneySupply * .35) && mNodeCoins > (nMoneySupply * .3)) {
+                ret = blockValue * .55;
+            } else if (mNodeCoins <= (nMoneySupply * .4) && mNodeCoins > (nMoneySupply * .35)) {
+                ret = blockValue * .5;
+            } else if (mNodeCoins <= (nMoneySupply * .45) && mNodeCoins > (nMoneySupply * .4)) {
+                ret = blockValue * .45;
+            } else if (mNodeCoins <= (nMoneySupply * .5) && mNodeCoins > (nMoneySupply * .45)) {
+                ret = blockValue * .4;
+            } else if (mNodeCoins <= (nMoneySupply * .55) && mNodeCoins > (nMoneySupply * .5)) {
+                ret = blockValue * .35;
+            } else if (mNodeCoins <= (nMoneySupply * .6) && mNodeCoins > (nMoneySupply * .55)) {
+                ret = blockValue * .3;
+            } else if (mNodeCoins <= (nMoneySupply * .65) && mNodeCoins > (nMoneySupply * .6)) {
+                ret = blockValue * .25;
+            } else if (mNodeCoins <= (nMoneySupply * .7) && mNodeCoins > (nMoneySupply * .65)) {
+                ret = blockValue * .2;
+            } else if (mNodeCoins <= (nMoneySupply * .75) && mNodeCoins > (nMoneySupply * .7)) {
+                ret = blockValue * .15;
+            } else {
+                ret = blockValue * .1;
+            }
+        } else if (nHeight > 325000) {
             if (mNodeCoins <= (nMoneySupply * .01) && mNodeCoins > 0) {
                 ret = blockValue * .90;
             } else if (mNodeCoins <= (nMoneySupply * .02) && mNodeCoins > (nMoneySupply * .01)) {
@@ -2821,7 +2855,7 @@ void RecalculateZMOTAMinted()
         assert(ReadBlockFromDisk(block, pindex));
 
         std::list<CZerocoinMint> listMints;
-        BlockToZerocoinMintList(block, listMints, true);
+        BlockToZerocoinMintList(block, listMints);
 
         vector<libzerocoin::CoinDenomination> vDenomsBefore = pindex->vMintDenominationsInBlock;
         pindex->vMintDenominationsInBlock.clear();
@@ -2846,7 +2880,7 @@ void RecalculateZMOTASpent()
         CBlock block;
         assert(ReadBlockFromDisk(block, pindex));
 
-        list<libzerocoin::CoinDenomination> listDenomsSpent = ZerocoinSpendListFromBlock(block, true);
+        list<libzerocoin::CoinDenomination> listDenomsSpent = ZerocoinSpendListFromBlock(block);
 
         //Reset the supply to previous block
         pindex->mapZerocoinSupply = pindex->pprev->mapZerocoinSupply;
@@ -3160,8 +3194,8 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
 
     std::list<CZerocoinMint> listMints;
     bool fFilterInvalid = pindex->nHeight >= Params().Zerocoin_Block_RecalculateAccumulators();
-    BlockToZerocoinMintList(block, listMints, fFilterInvalid);
-    std::list<libzerocoin::CoinDenomination> listSpends = ZerocoinSpendListFromBlock(block, fFilterInvalid);
+    BlockToZerocoinMintList(block, listMints);
+    std::list<libzerocoin::CoinDenomination> listSpends = ZerocoinSpendListFromBlock(block);
 
     if (pindex->nHeight == Params().Zerocoin_Block_RecalculateAccumulators() + 1) {
         RecalculateZMOTAMinted();
