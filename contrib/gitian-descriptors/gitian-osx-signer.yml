@@ -7,7 +7,7 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/Crestington/mota-detached-sigs.git"
+- "url": "https://github.com/mota-project/mota-detached-sigs.git"
   "dir": "signature"
 files:
 - "mota-osx-unsigned.tar.gz"

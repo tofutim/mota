@@ -29,8 +29,7 @@ Drag MOTA-Qt to your applications folder, and then run MOTA-Qt.
 * See the documentation at the [MOTA Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
 for help and more information.
 * Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [MOTA Forum](http://forum.mota.org/).
-* Join our Discord server [Discord Server](https://discord.mota.org)
-* Join one of our Slack groups [MOTA Slack Groups](https://mota.org/slack-logins/) (Main community is replaced by Discord).
+* Join one of our Slack groups [MOTA Slack Groups](https://mota.org/slack-logins/).
 
 Building
 ---------------------
@@ -42,7 +41,7 @@ The following are developer notes on how to build MOTA on your native platform. 
 
 Development
 ---------------------
-The Mota repo's [root README](https://github.com/Crestington/mota/blob/master/README.md) contains relevant information on the development process and automated testing.
+The Mota repo's [root README](https://github.com/MOTA-Project/MOTA/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)

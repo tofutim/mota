@@ -38,13 +38,13 @@ Instructions: Homebrew
 
 #### Install dependencies using Homebrew
 
-        brew install autoconf automake berkeley-db4 libtool boost miniupnpc openssl pkg-config protobuf qt5 libzmq
+        brew install autoconf automake berkeley-db4 libtool boost miniupnpc openssl pkg-config protobuf qt5
 
 ### Building `motad`
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone https://github.com/Jahvanci/mota.git
+        git clone https://github.com/MOTA-Project/MOTA.git
         cd MOTA
 
 2.  Build motad:

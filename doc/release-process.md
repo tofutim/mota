@@ -24,10 +24,10 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
-    git clone https://github.com/Crestington/gitian.sigs.git
-    git clone https://github.com/Crestington/mota-detached-sigs.git
+    git clone https://github.com/mota-project/gitian.sigs.git
+    git clone https://github.com/mota-project/mota-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/Crestington/mota.git
+    git clone https://github.com/mota-project/mota.git
 
 ### MOTA maintainers/release engineers, suggestion for writing release notes
 
@@ -113,10 +113,6 @@ The gbuild invocations below <b>DO NOT DO THIS</b> by default.
     ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../mota/contrib/gitian-descriptors/gitian-osx.yml
     mv build/out/mota-*-osx-unsigned.tar.gz inputs/mota-osx-unsigned.tar.gz
     mv build/out/mota-*.tar.gz build/out/mota-*.dmg ../
-
-    ./bin/gbuild --memory 3000 --commit mota=v${VERSION} ../mota/contrib/gitian-descriptors/gitian-aarch64.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../mota/contrib/gitian-descriptors/gitian-aarch64.yml
-    mv build/out/mota-*.tar.gz build/out/src/mota-*.tar.gz ../
     popd
 
 Build output expected:
@@ -140,7 +136,6 @@ Verify the signatures
     ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../mota/contrib/gitian-descriptors/gitian-linux.yml
     ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../mota/contrib/gitian-descriptors/gitian-win.yml
     ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../mota/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../mota/contrib/gitian-descriptors/gitian-aarch64.yml
     popd
 
 ### Next steps:
@@ -151,7 +146,6 @@ Commit your signature to gitian.sigs:
     git add ${VERSION}-linux/${SIGNER}
     git add ${VERSION}-win-unsigned/${SIGNER}
     git add ${VERSION}-osx-unsigned/${SIGNER}
-    git add ${VERSION}-aarch64/${SIGNER}
     git commit -a
     git push  # Assuming you can push to the gitian.sigs tree
     popd
@@ -190,7 +184,7 @@ Codesigner only: Commit the detached codesign payloads:
 Non-codesigners: wait for Windows/OS X detached signatures:
 
 - Once the Windows/OS X builds each have 3 matching signatures, they will be signed with their respective release keys.
-- Detached signatures will then be committed to the [mota-detached-sigs](https://github.com/Crestington/mota-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
+- Detached signatures will then be committed to the [mota-detached-sigs](https://github.com/MOTA-Project/mota-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
 
 Create (and optionally verify) the signed OS X binary:
 
@@ -266,6 +260,6 @@ Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spur
 
   - Archive release notes for the new version to `doc/release-notes/` (branch `master` and branch of the release)
 
-  - Create a [new GitHub release](https://github.com/Crestington/mota/releases/new) with a link to the archived release notes.
+  - Create a [new GitHub release](https://github.com/MOTA-Project/MOTA/releases/new) with a link to the archived release notes.
 
   - Celebrate

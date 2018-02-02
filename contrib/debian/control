@@ -22,9 +22,9 @@ Build-Depends: debhelper,
  libqrencode-dev,
  libprotobuf-dev, protobuf-compiler
 Standards-Version: 3.9.2
-Homepage: http://www.motacoin.vip
-Vcs-Git: git://github.com/Crestington/mota.git
-Vcs-Browser: http://github.com/Crestington/mota
+Homepage: http://www.mota.org
+Vcs-Git: git://github.com/MOTA-Project/MOTA.git
+Vcs-Browser: http://github.com/MOTA-Project/MOTA
 
 Package: motad
 Architecture: any
