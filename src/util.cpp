@@ -105,26 +105,20 @@ std::string to_internal(const std::string&);
 
 using namespace std;
 
-// MOTA only features
-// Masternode
+//MOTA only features
 bool fMasterNode = false;
 string strMasterNodePrivKey = "";
 string strMasterNodeAddr = "";
 bool fLiteMode = false;
-// SwiftX
 bool fEnableSwiftTX = true;
 int nSwiftTXDepth = 5;
-// Automatic Zerocoin minting
-bool fEnableZeromint = true;
-int nZeromintPercentage = 10;
-int nPreferredDenom = 0;
-const int64_t AUTOMINT_DELAY = (60 * 5); // Wait at least 5 minutes until Automint starts
-
+int nObfuscationRounds = 2;
 int nAnonymizeMotaAmount = 1000;
 int nLiquidityProvider = 0;
 /** Spork enforcement enabled time */
 int64_t enforceMasternodePaymentsTime = 4085657524;
 bool fSucessfullyLoaded = false;
+bool fEnableObfuscation = false;
 /** All denominations used by obfuscation */
 std::vector<int64_t> obfuScationDenominations;
 string strBudgetMode = "";
@@ -237,13 +231,12 @@ bool LogAcceptCategory(const char* category)
             const vector<string>& categories = mapMultiArgs["-debug"];
             ptrCategory.reset(new set<string>(categories.begin(), categories.end()));
             // thread_specific_ptr automatically deletes the set when the thread ends.
-            // "mota" is a composite category enabling all MOTA-related debug output
+            // "mota" is a composite category enabling all Mota-related debug output
             if (ptrCategory->count(string("mota"))) {
                 ptrCategory->insert(string("obfuscation"));
-                ptrCategory->insert(string("swiftx"));
+                ptrCategory->insert(string("swifttx"));
                 ptrCategory->insert(string("masternode"));
                 ptrCategory->insert(string("mnpayments"));
-                ptrCategory->insert(string("zero"));
                 ptrCategory->insert(string("mnbudget"));
             }
         }
@@ -424,13 +417,13 @@ void PrintExceptionContinue(std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-// Windows < Vista: C:\Documents and Settings\Username\Application Data\MOTA
-// Windows >= Vista: C:\Users\Username\AppData\Roaming\MOTA
-// Mac: ~/Library/Application Support/MOTA
+// Windows < Vista: C:\Documents and Settings\Username\Application Data\Mota
+// Windows >= Vista: C:\Users\Username\AppData\Roaming\Mota
+// Mac: ~/Library/Application Support/Mota
 // Unix: ~/.mota
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "MOTA";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Mota";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -442,10 +435,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     TryCreateDirectory(pathRet);
-    return pathRet / "MOTA";
+    return pathRet / "Mota";
 #else
     // Unix
-    return pathRet / ".mota";
+    return pathRet / ".Mota";
 #endif
 #endif
 }
@@ -492,7 +485,7 @@ void ClearDatadirCache()
 
 boost::filesystem::path GetConfigFile()
 {
-    boost::filesystem::path pathConfigFile(GetArg("-conf", "mota.conf"));
+    boost::filesystem::path pathConfigFile(GetArg("-conf", "Mota.conf"));
     if (!pathConfigFile.is_complete())
         pathConfigFile = GetDataDir(false) / pathConfigFile;
 

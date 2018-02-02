@@ -2,14 +2,14 @@
 
 MOTA Core version *version* is now available from:
 
-  <https://github.com/Jahvanci/MotaCoinRevamp/releases>
+  <https://github.com/Jahvanci/mota/releases>
 
 This is a new major version release, including various bug fixes and
 performance improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/Jahvanci/MotaCoinRevamp/issues>
+  <https://github.com/Jahvanci/mota/issues>
 
 Mandatory Update
 ==============

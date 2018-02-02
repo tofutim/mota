@@ -168,7 +168,7 @@
         <translation>Потвърдете криптирането на портфейла</translation>
     </message>
     <message>
-        <source>MOTA will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
+        <source>MOTA will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your MOTAs from being stolen by malware infecting your computer.</source>
         <translation>MOTA сега ще се затвори, за да довърши процеса на криптиране. Запомнете, че криптирането на вашия портфейл не може напълно да защити вашия MOTA от това, да бъде откраднат от злонамерен софутуер, инфектирал вашия компютър.</translation>
     </message>
     <message>
@@ -176,8 +176,8 @@
         <translation>Сигурни ли сте, че искате да криптирате вашия портфейл?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PIV&lt;/b&gt;!</source>
-        <translation>&lt;b&gt;Внимание: Ако криптирате вашия портфейл и загубите вашата парола, вие ще ЗАГУБИТЕ ВСИЧКИТЕ ВИ PIV&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MOTA&lt;/b&gt;!</source>
+        <translation>&lt;b&gt;Внимание: Ако криптирате вашия портфейл и загубите вашата парола, вие ще ЗАГУБИТЕ ВСИЧКИТЕ ВИ MOTA&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -266,24 +266,12 @@
         <source>Encrypted Key:</source>
         <translation>Криптиращ ключ:</translation>
     </message>
-    <message>
-        <source>Copy the current signature to the system clipboard</source>
-        <translation>Копирай сегашния подпис в системния буфер</translation>
-    </message>
-    <message>
-        <source>Sign the message to prove you own this MOTA address</source>
-        <translation>Подпишете съобщението, за да докажете, че притежавате този MOTA адрес</translation>
-    </message>
-    <message>
-        <source>Encrypt &amp;Key</source>
-        <translation>Криптиращ ключ</translation>
-    </message>
     </context>
 <context>
     <name>BitcoinGUI</name>
     <message>
         <source>Unlock wallet</source>
-        <translation>Отключване на портфейла</translation>
+        <translation>Отключи портфейла</translation>
     </message>
     </context>
 <context>
@@ -346,25 +334,6 @@
     </context>
 <context>
     <name>PeerTableModel</name>
-    </context>
-<context>
-    <name>PrivacyDialog</name>
-    <message>
-        <source>Choose previously used address</source>
-        <translation>Изберете предишноизползван адрес</translation>
-    </message>
-    <message>
-        <source>Alt+A</source>
-        <translation>Алт+А</translation>
-    </message>
-    <message>
-        <source>Paste address from clipboard</source>
-        <translation>Постави адреса от буфера</translation>
-    </message>
-    <message>
-        <source>Alt+P</source>
-        <translation>Алт+П</translation>
-    </message>
     </context>
 <context>
     <name>QObject</name>
@@ -451,14 +420,6 @@
         <source>Alt+P</source>
         <translation>Алт+П</translation>
     </message>
-    <message>
-        <source>Copy the current signature to the system clipboard</source>
-        <translation>Копирай сегашния подпис в системния буфер</translation>
-    </message>
-    <message>
-        <source>Sign the message to prove you own this MOTA address</source>
-        <translation>Подпишете съобщението, за да докажете, че притежавате този MOTA адрес</translation>
-    </message>
     </context>
 <context>
     <name>SplashScreen</name>
@@ -517,9 +478,6 @@
         <source>Export the data in the current tab to a file</source>
         <translation>Експортиране информацията от сегашния таб във файл</translation>
     </message>
-    </context>
-<context>
-    <name>ZPivControlDialog</name>
     </context>
 <context>
     <name>mota-core</name>

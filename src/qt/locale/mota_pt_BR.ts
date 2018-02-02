@@ -172,16 +172,16 @@
         <translation>Confirmar criptografia de carteira</translation>
     </message>
     <message>
-        <source>MOTA will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>MOTA vai fechar agora para finalizar o processo de criptografia. Lembre-se que encriptar sua carteira não pode proteger totalmente suas PIVs de serem roubadas por malwares infectando seu computador.</translation>
+        <source>MOTA will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your MOTAs from being stolen by malware infecting your computer.</source>
+        <translation>MOTA vai fechar agora para finalizar o processo de criptografia. Lembre-se que encriptar sua carteira não pode proteger totalmente suas MOTAs de serem roubadas por malwares infectando seu computador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Você tem certeza que deseja criptografar sua carteira?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PIV&lt;/b&gt;!</source>
-        <translation>Aviso: se você criptografar sua carteira e perder sua senha você &lt;b&gt;PERDERÁ TODAS AS SUAS PIV&lt;b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MOTA&lt;/b&gt;!</source>
+        <translation>Aviso: se você criptografar sua carteira e perder sua senha você &lt;b&gt;PERDERÁ TODAS AS SUAS MOTA&lt;b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -956,6 +956,10 @@ MultiSend: %1</translation>
         <translation>Favor alterar para o "Modo de lista" para usar esta função.</translation>
     </message>
     <message>
+        <source>Non-anonymized input selected. &lt;b&gt;Obfuscation will be disabled.&lt;/b&gt;&lt;br&gt;&lt;br&gt;If you still want to use Obfuscation, please deselect all non-nonymized inputs first and then check Obfuscation checkbox again.</source>
+        <translation>Input não-anonimizado selecionado. &lt;b&gt;Ofuscação será desabilitada.&lt;/b&gt;&lt;br&gt;&lt;br&gt; Se você ainda quiser usar a Ofuscação, favor desmarcar todos os inputs não anônimos primeiro e então marque a opção de Ofuscação novamente.</translation>
+    </message>
+    <message>
         <source>highest</source>
         <translation>mais alto</translation>
     </message>
@@ -974,6 +978,10 @@ MultiSend: %1</translation>
     <message>
         <source>Can vary +/- %1 duff(s) per input.</source>
         <translation>pode variar entre +/-%1 duff(s) por input</translation>
+    </message>
+    <message>
+        <source>n/a</source>
+        <translation>n/a</translation>
     </message>
     <message>
         <source>medium</source>
@@ -1452,32 +1460,32 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Favor selecionar o nível de privacidade.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 25000 PIV</source>
-        <translation>Use 2 masternodes separados para embaralhar fundos até 25000 PIV</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 MOTA</source>
+        <translation>Use 2 masternodes separados para embaralhar fundos até 10000 MOTA</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 25000 PIV</source>
-        <translation>Use 8 masternodes separados para embaralhar fundos até 25000 PIV</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 MOTA</source>
+        <translation>Use 8 masternodes separados para embaralhar fundos até 10000 MOTA</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Use 16 masternodes separados</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 PIV to anonymize 25000 PIV</source>
-        <translation>Está opção é a mais rápida e vai custar em torno de ~0.025 PIV para anonimizar 25000 PIV</translation>
+        <source>This option is the quickest and will cost about ~0.025 MOTA to anonymize 10000 MOTA</source>
+        <translation>Está opção é a mais rápida e vai custar em torno de ~0.025 MOTA para anonimizar 10000 MOTA</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 PIV to anonymize 25000 PIV</source>
-        <translation>Está opção moderamente rápida e vai custar em torno de ~0.05 PIV para anonimizar 25000 PIV</translation>
+        <source>This option is moderately fast and will cost about 0.05 MOTA to anonymize 10000 MOTA</source>
+        <translation>Está opção moderamente rápida e vai custar em torno de ~0.05 MOTA para anonimizar 10000 MOTA</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Esta é a opção mais lenta e mais segura. Usando a anonimização máxima vai custar</translation>
     </message>
     <message>
-        <source>0.1 PIV per 25000 PIV you anonymize.</source>
-        <translation>0.1 PIV por 25000 PIV que deixar anônima.</translation>
+        <source>0.1 MOTA per 10000 MOTA you anonymize.</source>
+        <translation>0.1 MOTA por 10000 MOTA que deixar anônima.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1572,6 +1580,18 @@ Favor verificar o endereço e tente novamente.</translation>
     <message>
         <source>&amp;Start MOTA on system login</source>
         <translation>&amp;Iniciar MOTA ao logar no sistema</translation>
+    </message>
+    <message>
+        <source>This setting determines the amount of individual masternodes that an input will be anonymized through.&lt;br/&gt;More rounds of anonymization gives a higher degree of privacy, but also costs more in fees.</source>
+        <translation>Esta configuração determina a quantidade de masternodes individuais em que um input será feito anônimo. &lt;br/&gt;Mais rodadas de anonimidade darão um grau maior de privacidade, mas também custarão mais em taxas. </translation>
+    </message>
+    <message>
+        <source>Obfuscation rounds to use</source>
+        <translation>Rodadas de ofuscação para usar</translation>
+    </message>
+    <message>
+        <source>Amount of MOTA to keep anonymized</source>
+        <translation>Quantidade de MOTA a manter anônima</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
@@ -1731,6 +1751,10 @@ https://www.transifex.com/mota-project/mota-project-translations</translation>
         <translation>Imaturo:</translation>
     </message>
     <message>
+        <source>Balances</source>
+        <translation>Fundos</translation>
+    </message>
+    <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MOTA network after a connection is established, but this process has not completed yet.</source>
         <translation>A informação mostrada pode estar desatualizada. A sua carteira se sincroniza automaticamente com a rede MOTA após estabelecer uma conexão, mas esse processo ainda não foi concluído.</translation>
     </message>
@@ -1759,12 +1783,130 @@ https://www.transifex.com/mota-project/mota-project-translations</translation>
         <translation>Disponível:</translation>
     </message>
     <message>
+        <source>Status:</source>
+        <translation>Situação:</translation>
+    </message>
+    <message>
+        <source>Obfuscation Balance:</source>
+        <translation>Saldo ofuscado:</translation>
+    </message>
+    <message>
+        <source>0 MOTA / 0 Rounds</source>
+        <translation>0 MOTA / 0 Rodadas</translation>
+    </message>
+    <message>
+        <source>Enabled/Disabled</source>
+        <translation>Ativado/Desativado</translation>
+    </message>
+    <message>
+        <source>Try to manually submit a Obfuscation request.</source>
+        <translation>Tente encaminhar uma requisição manualmente de Ofuscação.</translation>
+    </message>
+    <message>
+        <source>Reset the current status of Obfuscation (can interrupt Obfuscation if it's in the process of Mixing, which can cost you money!)</source>
+        <translation>Reinicia o presente estado de ofuscação (pode interromper a Ofuscação se estiver em processo de Embaralhamento, o que pode lhe custar dinheiro!)</translation>
+    </message>
+    <message>
+        <source>Obfuscation</source>
+        <translation>Ofuscação</translation>
+    </message>
+    <message>
+        <source>Completion:</source>
+        <translation>Conclusão:</translation>
+    </message>
+    <message>
+        <source>Amount and Rounds:</source>
+        <translation>Quantia e Rodadas:</translation>
+    </message>
+    <message>
+        <source>n/a</source>
+        <translation>n/a</translation>
+    </message>
+    <message>
         <source>Recent transactions</source>
         <translation>Transações recentes</translation>
     </message>
     <message>
+        <source>Start/Stop Mixing</source>
+        <translation>Iniciar/Parar embaralhamento</translation>
+    </message>
+    <message>
+        <source>(Last Message)</source>
+        <translation>(Última mensagem)</translation>
+    </message>
+    <message>
+        <source>Try Mix</source>
+        <translation>Tente embaralhar</translation>
+    </message>
+    <message>
+        <source>Reset</source>
+        <translation>Reinicia</translation>
+    </message>
+    <message>
         <source>out of sync</source>
         <translation>fora de sincronia</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Desativado</translation>
+    </message>
+    <message>
+        <source>No inputs detected</source>
+        <translation>Nenhum input detectado</translation>
+    </message>
+    <message>
+        <source>Overall progress</source>
+        <translation>Progresso geral</translation>
+    </message>
+    <message>
+        <source>Denominated</source>
+        <translation>Denominado</translation>
+    </message>
+    <message>
+        <source>Anonymized</source>
+        <translation>Anonimizado</translation>
+    </message>
+    <message>
+        <source>Last Obfuscation message:
+</source>
+        <translation>Última mensagem de ofuscação:
+</translation>
+    </message>
+    <message>
+        <source>Obfuscation was successfully reset.</source>
+        <translation>Ofuscação foi reiniciada com sucesso.</translation>
+    </message>
+    <message>
+        <source>Obfuscation requires at least %1 to use.</source>
+        <translation>Ofuscação requer pelo menos %1 para usar.</translation>
+    </message>
+    <message>
+        <source>Wallet is locked and user declined to unlock. Disabling Obfuscation.</source>
+        <translation>A carteira está travada e o usuário recusou o destravamento. Desabilitando a Ofuscação.</translation>
+    </message>
+    <message>
+        <source>Found enough compatible inputs to anonymize %1</source>
+        <translation>Foram encontrados inputos suficientes para anonimizar %1</translation>
+    </message>
+    <message>
+        <source>Start Obfuscation</source>
+        <translation>Iniciar ofuscação</translation>
+    </message>
+    <message>
+        <source>Stop Obfuscation</source>
+        <translation>Parar ofuscação</translation>
+    </message>
+    <message>
+        <source>Mixed</source>
+        <translation>Embaralhado</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Ativado</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>N/A</translation>
     </message>
 </context>
 <context>
@@ -1817,109 +1959,6 @@ https://www.transifex.com/mota-project/mota-project-translations</translation>
         <translation>Tempo de resposta</translation>
     </message>
 </context>
-<context>
-    <name>PrivacyDialog</name>
-    <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MOTA network after a connection is established, but this process has not completed yet.</source>
-        <translation>A informação mostrada pode estar desatualizada. A sua carteira se sincroniza automaticamente com a rede MOTA após estabelecer uma conexão, mas esse processo ainda não foi concluído.</translation>
-    </message>
-    <message>
-        <source>0</source>
-        <translation>0</translation>
-    </message>
-    <message>
-        <source>Reset</source>
-        <translation>Reinicia</translation>
-    </message>
-    <message>
-        <source>Quantity:</source>
-        <translation>Quantidade:</translation>
-    </message>
-    <message>
-        <source>Amount:</source>
-        <translation>Quantia:</translation>
-    </message>
-    <message>
-        <source>Pay &amp;To:</source>
-        <translation>Pagar &amp;Para:</translation>
-    </message>
-    <message>
-        <source>Choose previously used address</source>
-        <translation>Escolha o endereço previamente utilizado</translation>
-    </message>
-    <message>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
-    </message>
-    <message>
-        <source>Paste address from clipboard</source>
-        <translation>Cole o endereço da área de transferência</translation>
-    </message>
-    <message>
-        <source>Alt+P</source>
-        <translation>Alt+P</translation>
-    </message>
-    <message>
-        <source>&amp;Label:</source>
-        <translation>&amp;Rótulo:</translation>
-    </message>
-    <message>
-        <source>Enter a label for this address to add it to the list of used addresses</source>
-        <translation>Coloque uma etiqueta neste endereço para adicioná-lo à lista de endereços utilizados</translation>
-    </message>
-    <message>
-        <source>A&amp;mount:</source>
-        <translation>Quantia:</translation>
-    </message>
-    <message>
-        <source>Priority:</source>
-        <translation>Prioridade:</translation>
-    </message>
-    <message>
-        <source>Fee:</source>
-        <translation>Taxa:</translation>
-    </message>
-    <message>
-        <source>no</source>
-        <translation>não</translation>
-    </message>
-    <message>
-        <source>Bytes:</source>
-        <translation>Bytes:</translation>
-    </message>
-    <message>
-        <source>Insufficient funds!</source>
-        <translation>Fundos insuficientes!</translation>
-    </message>
-    <message>
-        <source>medium</source>
-        <translation>médio</translation>
-    </message>
-    <message>
-        <source>Coin Control Features</source>
-        <translation>Funções do Controle de Moedas</translation>
-    </message>
-    <message>
-        <source>Change:</source>
-        <translation>Troco:</translation>
-    </message>
-    <message>
-        <source>out of sync</source>
-        <translation>fora de sincronia</translation>
-    </message>
-    <message>
-        <source>Copy quantity</source>
-        <translation>Copiar quantidade</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Copiar quantia</translation>
-    </message>
-    <message>
-        <source>Confirm send coins</source>
-        <translation>Confirmar envio de moedas</translation>
-    </message>
-    </context>
 <context>
     <name>QObject</name>
     <message>
@@ -2233,7 +2272,7 @@ https://www.transifex.com/mota-project/mota-project-translations</translation>
     </message>
     <message>
         <source>&amp;Label:</source>
-        <translation>&amp;Rótulo:</translation>
+        <translation>Rótu&amp;lo:</translation>
     </message>
     <message>
         <source>&amp;Amount:</source>
@@ -2377,6 +2416,10 @@ https://www.transifex.com/mota-project/mota-project-translations</translation>
         <translation>Funções do Controle de Moedas</translation>
     </message>
     <message>
+        <source>automatically selected</source>
+        <translation>selecionado automaticamente</translation>
+    </message>
+    <message>
         <source>Insufficient funds!</source>
         <translation>Fundos insuficientes!</translation>
     </message>
@@ -2429,8 +2472,8 @@ https://www.transifex.com/mota-project/mota-project-translations</translation>
         <translation>Tamanho UTXO:</translation>
     </message>
     <message>
-        <source>0 PIV</source>
-        <translation>0 PIV</translation>
+        <source>0 MOTA</source>
+        <translation>0 MOTA</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2447,6 +2490,10 @@ https://www.transifex.com/mota-project/mota-project-translations</translation>
     <message>
         <source>Minimize</source>
         <translation>Minimizar</translation>
+    </message>
+    <message>
+        <source>Obfuscation</source>
+        <translation>Ofuscação</translation>
     </message>
     <message>
         <source>per kilobyte</source>
@@ -2469,8 +2516,8 @@ https://www.transifex.com/mota-project/mota-project-translations</translation>
         <translation>Tempo de confirmação:</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uPIVs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPIVs in fee,&lt;br /&gt;while "at least" pays 1000 uPIVs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Se a taxa padrão estiver definida para 1000 uPIVs e a transação for somente de 250 bytes, então "por kilobyte" pagará somente 250 uPIVs em taxa,&lt;br /&gt; pagará pelo menos 1000 uPIVs. Para transações maiores que um kilobyte ambas pagam por kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uMOTAs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uMOTAs in fee,&lt;br /&gt;while "at least" pays 1000 uMOTAs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Se a taxa padrão estiver definida para 1000 uMOTAs e a transação for somente de 250 bytes, então "por kilobyte" pagará somente 250 uMOTAs em taxa,&lt;br /&gt; pagará pelo menos 1000 uMOTAs. Para transações maiores que um kilobyte ambas pagam por kilobyte.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for MOTA transactions than the network can process.</source>
@@ -3361,8 +3408,8 @@ https://www.transifex.com/mota-project/mota-project-translations</translation>
         <translation>Enviar Moedas</translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 PIV.</source>
-        <translation>SwiftTX ainda não suporta o envio de valores altos assim. As transações atualmente são limitadas a %1 PIV.</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 MOTA.</source>
+        <translation>SwiftTX ainda não suporta o envio de valores altos assim. As transações atualmente são limitadas a %1 MOTA.</translation>
     </message>
 </context>
 <context>
@@ -3405,13 +3452,6 @@ https://www.transifex.com/mota-project/mota-project-translations</translation>
     </message>
 </context>
 <context>
-    <name>ZPivControlDialog</name>
-    <message>
-        <source>0</source>
-        <translation>0</translation>
-    </message>
-    </context>
-<context>
     <name>mota-core</name>
     <message>
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
@@ -3420,6 +3460,10 @@ https://www.transifex.com/mota-project/mota-project-translations</translation>
     <message>
         <source>Disable all MOTA specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
         <translation>Desabilitar todas as funcionalidades específicas MOTA (Masternodes, Ofuscação, SwiftTX, Budgeting) (0-1, padrão: %u)</translation>
+    </message>
+    <message>
+        <source>Enable use of automated obfuscation for funds stored in this wallet (0-1, default: %u)</source>
+        <translation>Permitir o uso de ofuscação automática para fundos armazenados nesta carteira (0-1, padrão: %u)</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
@@ -3434,12 +3478,12 @@ https://www.transifex.com/mota-project/mota-project-translations</translation>
         <translation>Executar o comando quando uma transação da carteira mudar (%s no cmd será substituído pela TxID)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Taxas (em PIV/Kb) menores que isso serão consideradas taxa zero para propagação (padrão: %s)</translation>
+        <source>Fees (in MOTA/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Taxas (em MOTA/Kb) menores que isso serão consideradas taxa zero para propagação (padrão: %s)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Taxas (em PIV/Kb) menores que isso serão consideradas taxa zero para a criação da transação (padrão: %s)</translation>
+        <source>Fees (in MOTA/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Taxas (em MOTA/Kb) menores que isso serão consideradas taxa zero para a criação da transação (padrão: %s)</translation>
     </message>
     <message>
         <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
@@ -3462,8 +3506,8 @@ https://www.transifex.com/mota-project/mota-project-translations</translation>
         <translation>SwiftTX requer inputs com pelo menos 6 confirmações, você precisar aguardar alguns minutos e tentar novamente.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 25000 PIV.</source>
-        <translation>Incapaz de localizar fundos para esta transação que não são iguais a 25000 PIV.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 MOTA.</source>
+        <translation>Incapaz de localizar fundos para esta transação que não são iguais a 10000 MOTA.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -3650,8 +3694,8 @@ https://www.transifex.com/mota-project/mota-project-translations</translation>
         <translation>Falhou em ler o bloco</translation>
     </message>
     <message>
-        <source>Fee (in PIV/kB) to add to transactions you send (default: %s)</source>
-        <translation>Taxa (em PIV/kB) a adicionar em transações que você enviar (padrão: %s)</translation>
+        <source>Fee (in MOTA/kB) to add to transactions you send (default: %s)</source>
+        <translation>Taxa (em MOTA/kB) a adicionar em transações que você enviar (padrão: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -3758,6 +3802,10 @@ https://www.transifex.com/mota-project/mota-project-translations</translation>
         <translation>Script inválido detectado.</translation>
     </message>
     <message>
+        <source>Keep N MOTA anonymized (default: %u)</source>
+        <translation>Manter N MOTA anônimo (padrão: %u)</translation>
+    </message>
+    <message>
         <source>Last Obfuscation was too recent.</source>
         <translation>Última ofuscação foi muito recente.</translation>
     </message>
@@ -3856,6 +3904,10 @@ https://www.transifex.com/mota-project/mota-project-translations</translation>
     <message>
         <source>Obfuscation is idle.</source>
         <translation>Ofuscação está ociosa.</translation>
+    </message>
+    <message>
+        <source>Obfuscation options:</source>
+        <translation>Opções de ofuscação:</translation>
     </message>
     <message>
         <source>Obfuscation request complete:</source>

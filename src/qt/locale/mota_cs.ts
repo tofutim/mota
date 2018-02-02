@@ -176,16 +176,16 @@
         <translation>Potvrdit zašifrování peněženky</translation>
     </message>
     <message>
-        <source>MOTA will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>MOTA se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše PIVy před krádží, pokud je Váš počítač infikován malwarem.</translation>
+        <source>MOTA will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your MOTAs from being stolen by malware infecting your computer.</source>
+        <translation>MOTA se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše MOTAy před krádží, pokud je Váš počítač infikován malwarem.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Opravdu chcete zašifrovat Vaši peněženku?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PIV&lt;/b&gt;!</source>
-        <translation>Varování: Pokud zašifrujete svou peněženku a ztratíte frázové heslo, tak &lt;b&gt;ZTRATÍTE VŠECHNY VAŠE PIVy&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MOTA&lt;/b&gt;!</source>
+        <translation>Varování: Pokud zašifrujete svou peněženku a ztratíte frázové heslo, tak &lt;b&gt;ZTRATÍTE VŠECHNY VAŠE MOTAy&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -963,6 +963,10 @@ MultiSend: %1</translation>
         <translation>středně vysoký</translation>
     </message>
     <message>
+        <source>n/a</source>
+        <translation>n/a</translation>
+    </message>
+    <message>
         <source>medium</source>
         <translation>střední</translation>
     </message>
@@ -1438,24 +1442,24 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Vyberte úrpvěň ochrany soukromí</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 25000 PIV</source>
-        <translation>Použí 2 oddělené masternody k promíchání prostředků až do 25000 PIV</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 MOTA</source>
+        <translation>Použí 2 oddělené masternody k promíchání prostředků až do 10000 MOTA</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Použít 16 oddělených masternodů</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 PIV to anonymize 25000 PIV</source>
-        <translation>Tato možnost je nejrychleší a bude stát zhruba ~0.025 PIV pro anonymizaci 25000 PIV</translation>
+        <source>This option is the quickest and will cost about ~0.025 MOTA to anonymize 10000 MOTA</source>
+        <translation>Tato možnost je nejrychleší a bude stát zhruba ~0.025 MOTA pro anonymizaci 10000 MOTA</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Toto je nejpomalejší a nejvíce bezpečná volba. Použití maximalní anonymity bude stát</translation>
     </message>
     <message>
-        <source>0.1 PIV per 25000 PIV you anonymize.</source>
-        <translation>0.1 PIV za 25000 PIV anonymizujete.</translation>
+        <source>0.1 MOTA per 10000 MOTA you anonymize.</source>
+        <translation>0.1 MOTA za 10000 MOTA anonymizujete.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1526,6 +1530,10 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
     <message>
         <source>&amp;Start MOTA on system login</source>
         <translation>&amp;Spusti MOTA při přihlášení do systému</translation>
+    </message>
+    <message>
+        <source>Amount of MOTA to keep anonymized</source>
+        <translation>Počet MOTA pro anonymní držení</translation>
     </message>
     <message>
         <source>Show Masternodes Tab</source>
@@ -1607,6 +1615,10 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Zpracovávané:</translation>
     </message>
     <message>
+        <source>Balances</source>
+        <translation>Balance</translation>
+    </message>
+    <message>
         <source>Total:</source>
         <translation>Celkem:</translation>
     </message>
@@ -1618,7 +1630,75 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <source>Spendable:</source>
         <translation>Disponibilní:</translation>
     </message>
-    </context>
+    <message>
+        <source>Status:</source>
+        <translation>Stav:</translation>
+    </message>
+    <message>
+        <source>Obfuscation Balance:</source>
+        <translation>Obfuskační Balance:</translation>
+    </message>
+    <message>
+        <source>0 MOTA / 0 Rounds</source>
+        <translation>0 MOTA / 0 Kol</translation>
+    </message>
+    <message>
+        <source>Enabled/Disabled</source>
+        <translation>Zapnuté/Vypnuté</translation>
+    </message>
+    <message>
+        <source>Obfuscation</source>
+        <translation>Obfuskace</translation>
+    </message>
+    <message>
+        <source>n/a</source>
+        <translation>n/a</translation>
+    </message>
+    <message>
+        <source>Start/Stop Mixing</source>
+        <translation>Spustit/Zastavit Míchání</translation>
+    </message>
+    <message>
+        <source>Reset</source>
+        <translation>Reset</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Vypnuto</translation>
+    </message>
+    <message>
+        <source>No inputs detected</source>
+        <translation>Nedetekovány žádné vstupy</translation>
+    </message>
+    <message>
+        <source>Overall progress</source>
+        <translation>Celkový postup</translation>
+    </message>
+    <message>
+        <source>Anonymized</source>
+        <translation>Anonymizováno</translation>
+    </message>
+    <message>
+        <source>Obfuscation was successfully reset.</source>
+        <translation>Obfuskace byla úspěšně resetována</translation>
+    </message>
+    <message>
+        <source>Start Obfuscation</source>
+        <translation>Spustit Obfuskaci</translation>
+    </message>
+    <message>
+        <source>Stop Obfuscation</source>
+        <translation>Zastavit Obfuskaci</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Zapnuto</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>N/A</translation>
+    </message>
+</context>
 <context>
     <name>PaymentServer</name>
     <message>
@@ -1637,85 +1717,6 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Čas pingnutí</translation>
     </message>
 </context>
-<context>
-    <name>PrivacyDialog</name>
-    <message>
-        <source>0</source>
-        <translation>0</translation>
-    </message>
-    <message>
-        <source>Reset</source>
-        <translation>Reset</translation>
-    </message>
-    <message>
-        <source>Quantity:</source>
-        <translation>Množství:</translation>
-    </message>
-    <message>
-        <source>Amount:</source>
-        <translation>Hodnota:</translation>
-    </message>
-    <message>
-        <source>Choose previously used address</source>
-        <translation>Vyberte již dříve použitou adresu</translation>
-    </message>
-    <message>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
-    </message>
-    <message>
-        <source>Paste address from clipboard</source>
-        <translation>Vložit adresu z mezipamětí</translation>
-    </message>
-    <message>
-        <source>Alt+P</source>
-        <translation>Alt+P</translation>
-    </message>
-    <message>
-        <source>&amp;Label:</source>
-        <translation>&amp;Popis</translation>
-    </message>
-    <message>
-        <source>A&amp;mount:</source>
-        <translation>H&amp;odnota:</translation>
-    </message>
-    <message>
-        <source>Priority:</source>
-        <translation>Priorita:</translation>
-    </message>
-    <message>
-        <source>Fee:</source>
-        <translation>Poplatek:</translation>
-    </message>
-    <message>
-        <source>no</source>
-        <translation>ne</translation>
-    </message>
-    <message>
-        <source>Bytes:</source>
-        <translation>Byty:</translation>
-    </message>
-    <message>
-        <source>Insufficient funds!</source>
-        <translation>Nedostatek prostředků!</translation>
-    </message>
-    <message>
-        <source>medium</source>
-        <translation>střední</translation>
-    </message>
-    <message>
-        <source>Change:</source>
-        <translation>Změna:</translation>
-    </message>
-    <message>
-        <source>Copy quantity</source>
-        <translation>Kopíroat množstí</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Kopírovat hodnotu</translation>
-    </message>
-    </context>
 <context>
     <name>QObject</name>
     <message>
@@ -2017,6 +2018,14 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
 <context>
     <name>SendCoinsDialog</name>
     <message>
+        <source>Inputs...</source>
+        <translation>Vstupy...</translation>
+    </message>
+    <message>
+        <source>automatically selected</source>
+        <translation>automaticky vybráno</translation>
+    </message>
+    <message>
         <source>Insufficient funds!</source>
         <translation>Nedostatek prostředků!</translation>
     </message>
@@ -2057,8 +2066,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Změna:</translation>
     </message>
     <message>
-        <source>0 PIV</source>
-        <translation>0 PIV</translation>
+        <source>0 MOTA</source>
+        <translation>0 MOTA</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2071,6 +2080,10 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
     <message>
         <source>Minimize</source>
         <translation>Minimalizovat</translation>
+    </message>
+    <message>
+        <source>Obfuscation</source>
+        <translation>Obfuskace</translation>
     </message>
     <message>
         <source>per kilobyte</source>
@@ -2366,13 +2379,6 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Exportovat data z aktulní záložky do souboru</translation>
-    </message>
-    </context>
-<context>
-    <name>ZPivControlDialog</name>
-    <message>
-        <source>0</source>
-        <translation>0</translation>
     </message>
     </context>
 <context>

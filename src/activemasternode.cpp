@@ -1,7 +1,3 @@
-// Copyright (c) 2014-2016 The Dash developers
-// Copyright (c) 2015-2017 The MOTA developers
-// Distributed under the MIT/X11 software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "activemasternode.h"
 #include "addrman.h"
@@ -12,7 +8,7 @@
 #include "spork.h"
 
 //
-// Bootup the Masternode, look for a 25000 MOTA input and register on the network
+// Bootup the Masternode, look for a 10000 Mota input and register on the network
 //
 void CActiveMasternode::ManageStatus()
 {
@@ -68,13 +64,13 @@ void CActiveMasternode::ManageStatus()
         }
 
         if (Params().NetworkID() == CBaseChainParams::MAIN) {
-            if (service.GetPort() != 38832) {
-                notCapableReason = strprintf("Invalid port: %u - only 38832 is supported on mainnet.", service.GetPort());
+            if (service.GetPort() != Params().GetDefaultPort()) {
+                notCapableReason = strprintf("Invalid port: %u - only Params().GetDefaultPort() is supported on mainnet.", service.GetPort());
                 LogPrintf("CActiveMasternode::ManageStatus() - not capable: %s\n", notCapableReason);
                 return;
             }
-        } else if (service.GetPort() == 38832) {
-            notCapableReason = strprintf("Invalid port: %u - 38832 is only supported on mainnet.", service.GetPort());
+        } else if (service.GetPort() == Params().GetDefaultPort()) {
+            notCapableReason = strprintf("Invalid port: %u - Params().GetDefaultPort() is only supported on mainnet.", service.GetPort());
             LogPrintf("CActiveMasternode::ManageStatus() - not capable: %s\n", notCapableReason);
             return;
         }
@@ -267,13 +263,13 @@ bool CActiveMasternode::Register(std::string strService, std::string strKeyMaste
 
     CService service = CService(strService);
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
-        if (service.GetPort() != 38832) {
-            errorMessage = strprintf("Invalid port %u for masternode %s - only 38832 is supported on mainnet.", service.GetPort(), strService);
+        if (service.GetPort() != Params().GetDefaultPort()) {
+            errorMessage = strprintf("Invalid port %u for masternode %s - only Params().GetDefaultPort() is supported on mainnet.", service.GetPort(), strService);
             LogPrintf("CActiveMasternode::Register() - %s\n", errorMessage);
             return false;
         }
-    } else if (service.GetPort() == 38832) {
-        errorMessage = strprintf("Invalid port %u for masternode %s - 38832 is only supported on mainnet.", service.GetPort(), strService);
+    } else if (service.GetPort() == Params().GetDefaultPort()) {
+        errorMessage = strprintf("Invalid port %u for masternode %s - Params().GetDefaultPort() is only supported on mainnet.", service.GetPort(), strService);
         LogPrintf("CActiveMasternode::Register() - %s\n", errorMessage);
         return false;
     }
@@ -471,8 +467,8 @@ vector<COutput> CActiveMasternode::SelectCoinsMasternode()
     }
 
     // Filter
-    BOOST_FOREACH (const COutput& out, vCoins) {
-        if (out.tx->vout[out.i].nValue == 25000 * COIN) { //exactly
+    for (const COutput& out : vCoins) {
+        if (out.tx->vout[out.i].nValue == Params().GetRequiredMasternodeCollateral()) { //exactly
             filteredCoins.push_back(out);
         }
     }

@@ -7,7 +7,7 @@
     </message>
     <message>
         <source>Create a new address</source>
-        <translation>opret ny adresse</translation>
+        <translation>Ny adresse</translation>
     </message>
     <message>
         <source>&amp;New</source>
@@ -176,7 +176,7 @@
         <translation>Bekræft, og tegnebogen krypteres.</translation>
     </message>
     <message>
-        <source>MOTA will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
+        <source>MOTA will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your MOTAs from being stolen by malware infecting your computer.</source>
         <translation>MOTA vil lukke ned for at færdiggøre kryptograferingsprocesserne. Husk at kryptering alene ikke sikrer mod tyveri af mønterne fra malware eller virus på computeren.</translation>
     </message>
     <message>
@@ -184,8 +184,8 @@
         <translation>Er du sikker på, at du vil kryptere din tegnebog?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PIV&lt;/b&gt;!</source>
-        <translation>Advarsel! Hvis du krypterer din tegnebog og mister dit password vil du &lt;b&gt;MISTE ALLE DINE PIV&lt;/b&gt;. Passworded kan ikke genskabes.</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MOTA&lt;/b&gt;!</source>
+        <translation>Advarsel! Hvis du krypterer din tegnebog og mister dit password vil du &lt;b&gt;MISTE ALLE DINE MOTA&lt;/b&gt;. Passworded kan ikke genskabes.</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -899,6 +899,10 @@ Adresse: %4
         <translation>Modtaget med adresse</translation>
     </message>
     <message>
+        <source>DS Rounds</source>
+        <translation>DS gennemløb</translation>
+    </message>
+    <message>
         <source>Date</source>
         <translation>Dato</translation>
     </message>
@@ -971,6 +975,10 @@ Adresse: %4
         <translation>Skift til "listeformat" for at benytte denne funktion</translation>
     </message>
     <message>
+        <source>Non-anonymized input selected. &lt;b&gt;Obfuscation will be disabled.&lt;/b&gt;&lt;br&gt;&lt;br&gt;If you still want to use Obfuscation, please deselect all non-nonymized inputs first and then check Obfuscation checkbox again.</source>
+        <translation>Ikke anonymiseret indhold valgt.&lt;b&gt;tilsløring vil være slået fra.&lt;/b&gt;&lt;br&gt;&lt;br&gt;Hvis De ønsker at anvende tilsløring skal De fravælge alt ikke anonymiseret indhold først, derefter afmærke boksen for tilsløring igen.</translation>
+    </message>
+    <message>
         <source>highest</source>
         <translation>højeste</translation>
     </message>
@@ -989,6 +997,10 @@ Adresse: %4
     <message>
         <source>Can vary +/- %1 duff(s) per input.</source>
         <translation>kan variere +/- %1 duff(s) pr. input</translation>
+    </message>
+    <message>
+        <source>n/a</source>
+        <translation>Ikke tilgængelig</translation>
     </message>
     <message>
         <source>medium</source>
@@ -1508,32 +1520,32 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Vælg tilsløringsniveau</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 25000 PIV</source>
-        <translation>Brug 2 separate masternoder for at tilsløre beløb op til 25000 PIV</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 MOTA</source>
+        <translation>Brug 2 separate masternoder for at tilsløre beløb op til 10000 MOTA</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 25000 PIV</source>
-        <translation>Brug 8 separate masternoder for at tilsløre op til 25000 PIV</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 MOTA</source>
+        <translation>Brug 8 separate masternoder for at tilsløre op til 10000 MOTA</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Brug 16 separate masternoder</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 PIV to anonymize 25000 PIV</source>
-        <translation>Dette valg er det hurtigste og vil koste i omegnen af 0.025 PIV for at anonymiser 25000 PIV</translation>
+        <source>This option is the quickest and will cost about ~0.025 MOTA to anonymize 10000 MOTA</source>
+        <translation>Dette valg er det hurtigste og vil koste i omegnen af 0.025 MOTA for at anonymiser 10000 MOTA</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 PIV to anonymize 25000 PIV</source>
-        <translation>Dette valg er relativt hurtigt og vil koste i omegnen af 0.05 PIV for at anonymiser 25000 PIV</translation>
+        <source>This option is moderately fast and will cost about 0.05 MOTA to anonymize 10000 MOTA</source>
+        <translation>Dette valg er relativt hurtigt og vil koste i omegnen af 0.05 MOTA for at anonymiser 10000 MOTA</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Denne mulighed er den langsomste og det mest sikre valg. Valg af maksimal tilsløring vil koste</translation>
     </message>
     <message>
-        <source>0.1 PIV per 25000 PIV you anonymize.</source>
-        <translation>0.1 pr 25000 PIV for at tilsløre.</translation>
+        <source>0.1 MOTA per 10000 MOTA you anonymize.</source>
+        <translation>0.1 pr 10000 MOTA for at tilsløre.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1636,6 +1648,22 @@ Kontroller adressen og prøv igen.</translation>
     <message>
         <source>&amp;Start MOTA on system login</source>
         <translation>&amp;start MOTA når der logges på systemet</translation>
+    </message>
+    <message>
+        <source>This setting determines the amount of individual masternodes that an input will be anonymized through.&lt;br/&gt;More rounds of anonymization gives a higher degree of privacy, but also costs more in fees.</source>
+        <translation>Denne indstilling bestemmer antallet af individuelle masternoder hvorgennem der tilsløres et input. &lt;br/&gt;Jo flere gennemløb der udføres, jo højere grad af tilsløring, og jo højere gebyrer.</translation>
+    </message>
+    <message>
+        <source>Obfuscation rounds to use</source>
+        <translation>Antal gennemløb der skal benyttes </translation>
+    </message>
+    <message>
+        <source>This amount acts as a threshold to turn off Obfuscation once it's reached.</source>
+        <translation>når dette antal er nået slås tilsløringsfunktonen fra. </translation>
+    </message>
+    <message>
+        <source>Amount of MOTA to keep anonymized</source>
+        <translation>Antallet af MOTA som skal holdes tilslørede</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1827,6 +1855,10 @@ https://www.transifex.com/mota-project/mota-project-translations</translation>
         <translation>Indskyder- eller masternodebelønning er stadig under behandling</translation>
     </message>
     <message>
+        <source>Balances</source>
+        <translation>Saldi</translation>
+    </message>
+    <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MOTA network after a connection is established, but this process has not completed yet.</source>
         <translation>De viste informationer kan være uddaterede. Deres tegnebog synkronisere automatism med MOTA netværket så snart en forbindelse er etalbleret, men denne proces er ikke færdiggjort endnu. </translation>
     </message>
@@ -1863,12 +1895,145 @@ https://www.transifex.com/mota-project/mota-project-translations</translation>
         <translation>Brugbare:</translation>
     </message>
     <message>
+        <source>Status:</source>
+        <translation>Status</translation>
+    </message>
+    <message>
+        <source>Obfuscation Balance:</source>
+        <translation>Sløret beløb</translation>
+    </message>
+    <message>
+        <source>0 MOTA / 0 Rounds</source>
+        <translation>0 MOTA / 0 gennemløb</translation>
+    </message>
+    <message>
+        <source>Enabled/Disabled</source>
+        <translation>Startet/Stoppet</translation>
+    </message>
+    <message>
+        <source>Try to manually submit a Obfuscation request.</source>
+        <translation>Prøv at send en manuel tilsløringsanmodning.</translation>
+    </message>
+    <message>
+        <source>Reset the current status of Obfuscation (can interrupt Obfuscation if it's in the process of Mixing, which can cost you money!)</source>
+        <translation>Nulstil den aktuelle status for tilsløringsfunktionen. (Kan forstyrre processen, hvilket kan koste mønter).</translation>
+    </message>
+    <message>
+        <source>Obfuscation</source>
+        <translation>Tilsløring</translation>
+    </message>
+    <message>
+        <source>Completion:</source>
+        <translation>Færdiggørelse:</translation>
+    </message>
+    <message>
+        <source>Amount and Rounds:</source>
+        <translation>Beløb og gennemløb</translation>
+    </message>
+    <message>
+        <source>Submitted Denom:</source>
+        <translation>Afsendte midler</translation>
+    </message>
+    <message>
+        <source>n/a</source>
+        <translation>Ikke tilgængelig</translation>
+    </message>
+    <message>
         <source>Recent transactions</source>
         <translation>Nylige transaktioner</translation>
     </message>
     <message>
+        <source>Start/Stop Mixing</source>
+        <translation>Start/Stop tilsløring</translation>
+    </message>
+    <message>
+        <source>The denominations you submitted to the Masternode.&lt;br&gt;To mix, other users must submit the exact same denominations.</source>
+        <translation>Designerede midler afsendt til masternoden. &lt;br&gt;For at gennemføre tilsløringen må andre brugere afsende tilsvarende designerede midler.</translation>
+    </message>
+    <message>
+        <source>(Last Message)</source>
+        <translation>(seneste besked)</translation>
+    </message>
+    <message>
+        <source>Try Mix</source>
+        <translation>Prøv at usynliggøre</translation>
+    </message>
+    <message>
+        <source>Reset</source>
+        <translation>Nulstil</translation>
+    </message>
+    <message>
         <source>out of sync</source>
         <translation>Ude af synk</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>slået fra</translation>
+    </message>
+    <message>
+        <source>No inputs detected</source>
+        <translation>Ingen inputs valgt</translation>
+    </message>
+    <message>
+        <source>Not enough compatible inputs to anonymize &lt;span style='color:red;'&gt;%1&lt;/span&gt;,&lt;br&gt;will anonymize &lt;span style='color:red;'&gt;%2&lt;/span&gt; instead</source>
+        <translation>Der er ikke tilstrækkelige kompatible inputs tilgængelige for tilsløring &lt;span style='color:red;'&gt;%1&lt;/span&gt;,&lt;br&gt;vil tilsløre &lt;span style='color:red;'&gt;%2&lt;/span&gt; i stedet</translation>
+    </message>
+    <message>
+        <source>Overall progress</source>
+        <translation>Samlet status</translation>
+    </message>
+    <message>
+        <source>Denominated</source>
+        <translation>Designerede</translation>
+    </message>
+    <message>
+        <source>Anonymized</source>
+        <translation>Tilsløret</translation>
+    </message>
+    <message>
+        <source>Last Obfuscation message:
+</source>
+        <translation>Seneste besked fra tilsløringsprocessen</translation>
+    </message>
+    <message>
+        <source>Obfuscation was successfully reset.</source>
+        <translation>Tilsløringsfunktionen blev nulstillet </translation>
+    </message>
+    <message>
+        <source>If you don't want to see internal Obfuscation fees/transactions select "Most Common" as Type on the "Transactions" tab.</source>
+        <translation>Hvis de ikke ønsker at se de interne tilsløringsgebyrer og transaktioner, skal De vælge "Mest fremherskende" som type i transaktionsmenuen.</translation>
+    </message>
+    <message>
+        <source>Obfuscation requires at least %1 to use.</source>
+        <translation>Tilsløring kræver mindst %1 for at kunne anvendes </translation>
+    </message>
+    <message>
+        <source>Wallet is locked and user declined to unlock. Disabling Obfuscation.</source>
+        <translation>Tegnebogen er låst, brugeren har afvist at låse den op. Tilsløring slås fra.</translation>
+    </message>
+    <message>
+        <source>Found enough compatible inputs to anonymize %1</source>
+        <translation>Der er fundet nok kompatible inputs for tilsløring af %1</translation>
+    </message>
+    <message>
+        <source>Start Obfuscation</source>
+        <translation>Start tilsløring</translation>
+    </message>
+    <message>
+        <source>Stop Obfuscation</source>
+        <translation>stop tilsløring</translation>
+    </message>
+    <message>
+        <source>Mixed</source>
+        <translation>Tilsløret</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Slået til</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Ikke tilgængelig</translation>
     </message>
 </context>
 <context>
@@ -1977,121 +2142,6 @@ https://www.transifex.com/mota-project/mota-project-translations</translation>
         <translation>PingtidPingtid</translation>
     </message>
 </context>
-<context>
-    <name>PrivacyDialog</name>
-    <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MOTA network after a connection is established, but this process has not completed yet.</source>
-        <translation>De viste informationer kan være uddaterede. Deres tegnebog synkronisere automatism med MOTA netværket så snart en forbindelse er etalbleret, men denne proces er ikke færdiggjort endnu. </translation>
-    </message>
-    <message>
-        <source>0</source>
-        <translation>0</translation>
-    </message>
-    <message>
-        <source>Reset</source>
-        <translation>Nulstil</translation>
-    </message>
-    <message>
-        <source>Quantity:</source>
-        <translation>Antal:</translation>
-    </message>
-    <message>
-        <source>Amount:</source>
-        <translation>Beløb</translation>
-    </message>
-    <message>
-        <source>Pay &amp;To:</source>
-        <translation>Betal &amp;Til</translation>
-    </message>
-    <message>
-        <source>Choose previously used address</source>
-        <translation>Benyt en tidligere anvendt adresse.</translation>
-    </message>
-    <message>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
-    </message>
-    <message>
-        <source>Paste address from clipboard</source>
-        <translation>Indsæt adresse fra udklipsholderen.</translation>
-    </message>
-    <message>
-        <source>Alt+P</source>
-        <translation>Alt+P</translation>
-    </message>
-    <message>
-        <source>&amp;Label:</source>
-        <translation>&amp;Mærkning</translation>
-    </message>
-    <message>
-        <source>Enter a label for this address to add it to the list of used addresses</source>
-        <translation>Indtast et mærke til denne adresse for at tilføje den til listen over brugte adresser</translation>
-    </message>
-    <message>
-        <source>A&amp;mount:</source>
-        <translation>A&amp;mount</translation>
-    </message>
-    <message>
-        <source>Priority:</source>
-        <translation>Prioritet:</translation>
-    </message>
-    <message>
-        <source>Fee:</source>
-        <translation>Gebyr:</translation>
-    </message>
-    <message>
-        <source>Dust:</source>
-        <translation>Affald:</translation>
-    </message>
-    <message>
-        <source>no</source>
-        <translation>nej</translation>
-    </message>
-    <message>
-        <source>Bytes:</source>
-        <translation>Bytes:</translation>
-    </message>
-    <message>
-        <source>Insufficient funds!</source>
-        <translation>Saldo for lille!</translation>
-    </message>
-    <message>
-        <source>medium</source>
-        <translation>Middel</translation>
-    </message>
-    <message>
-        <source>Coin Control Features</source>
-        <translation>Møntkontrol, features</translation>
-    </message>
-    <message>
-        <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
-        <translation>Hvis denne er aktiveret, men tilbagebetalingsadressen er tom, eller ugyldig, overskydende beløb vil blive fremsendt til en nyoprettet adresse</translation>
-    </message>
-    <message>
-        <source>Custom change address</source>
-        <translation>Brugerdefineret tilbagebetalingsadresse</translation>
-    </message>
-    <message>
-        <source>Change:</source>
-        <translation>Penge tilbage:</translation>
-    </message>
-    <message>
-        <source>out of sync</source>
-        <translation>Ude af synk</translation>
-    </message>
-    <message>
-        <source>Copy quantity</source>
-        <translation>Kopiér antal</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Kopiér beløb</translation>
-    </message>
-    <message>
-        <source>Confirm send coins</source>
-        <translation>Bekræft at De vil sende mønter</translation>
-    </message>
-    </context>
 <context>
     <name>QObject</name>
     <message>
@@ -2637,6 +2687,14 @@ https://www.transifex.com/mota-project/mota-project-translations</translation>
         <translation>Møntkontrol, features</translation>
     </message>
     <message>
+        <source>Inputs...</source>
+        <translation>Inputs...</translation>
+    </message>
+    <message>
+        <source>automatically selected</source>
+        <translation>Automatisk valgte</translation>
+    </message>
+    <message>
         <source>Insufficient funds!</source>
         <translation>Saldo for lille!</translation>
     </message>
@@ -2701,8 +2759,8 @@ https://www.transifex.com/mota-project/mota-project-translations</translation>
         <translation>UTXO størrelse:</translation>
     </message>
     <message>
-        <source>0 PIV</source>
-        <translation>0 PIV</translation>
+        <source>0 MOTA</source>
+        <translation>0 MOTA</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2719,6 +2777,10 @@ https://www.transifex.com/mota-project/mota-project-translations</translation>
     <message>
         <source>Minimize</source>
         <translation>Minimer</translation>
+    </message>
+    <message>
+        <source>Obfuscation</source>
+        <translation>Tilsløring</translation>
     </message>
     <message>
         <source>per kilobyte</source>
@@ -2745,12 +2807,12 @@ https://www.transifex.com/mota-project/mota-project-translations</translation>
         <translation>Bekræftelsestid</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uPIVs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPIVs in fee,&lt;br /&gt;while "at least" pays 1000 uPIVs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uPIVs og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uPIV i gebyr, &lt;br /&gt; mens "mindst" udbetaler 1000 uPIVs. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
+        <source>If the custom fee is set to 1000 uMOTAs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uMOTAs in fee,&lt;br /&gt;while "at least" pays 1000 uMOTAs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uMOTAs og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uMOTA i gebyr, &lt;br /&gt; mens "mindst" udbetaler 1000 uMOTAs. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uPIVs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPIVs in fee,&lt;br /&gt;while "total at least" pays 1000 uPIVs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uPIVs og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uPIV i gebyr, &lt;br /&gt; mens "Total-mindst" udbetaler 1000 uPIVs. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
+        <source>If the custom fee is set to 1000 uMOTAs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uMOTAs in fee,&lt;br /&gt;while "total at least" pays 1000 uMOTAs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uMOTAs og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uMOTA i gebyr, &lt;br /&gt; mens "Total-mindst" udbetaler 1000 uMOTAs. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for MOTA transactions than the network can process.</source>
@@ -2892,9 +2954,17 @@ https://www.transifex.com/mota-project/mota-project-translations</translation>
         <source>A fee %1 times higher than %2 per kB is considered an insanely high fee.</source>
         <translation>Et gebyr %1 gange højere end %2 pr. kilobyte er vanvittigt højt.</translation>
     </message>
+    <message numerus="yes">
+        <source>Estimated to begin confirmation within %n block(s).</source>
+        <translation><numerusform>Forventer bekræftelse indenfor %n blokke</numerusform><numerusform>Forventer bekræftelse indenfor %n blokke</numerusform></translation>
+    </message>
     <message>
         <source>The recipient address is not valid, please recheck.</source>
         <translation>Modtageradressen er ikke gyldig. Kontroller igen</translation>
+    </message>
+    <message>
+        <source>(obfuscation requires this amount to be rounded up to the nearest %1).</source>
+        <translation>(Tilsløring kræver at dette beløb rundes op til nærmeste %1)</translation>
     </message>
     <message>
         <source> split into %1 outputs using the UTXO splitter.</source>
@@ -3721,8 +3791,8 @@ https://www.transifex.com/mota-project/mota-project-translations</translation>
         <translation>Send mønter</translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 PIV.</source>
-        <translation>SwiftTx understøtter ikke afsendelse af så store beløb endnu. Transaktioner er for tiden begrænsede til %1PIV.</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 MOTA.</source>
+        <translation>SwiftTx understøtter ikke afsendelse af så store beløb endnu. Transaktioner er for tiden begrænsede til %1MOTA.</translation>
     </message>
 </context>
 <context>
@@ -3764,13 +3834,6 @@ https://www.transifex.com/mota-project/mota-project-translations</translation>
         <translation>Tegnebogens data blev gemt i %1</translation>
     </message>
 </context>
-<context>
-    <name>ZPivControlDialog</name>
-    <message>
-        <source>0</source>
-        <translation>0</translation>
-    </message>
-    </context>
 <context>
     <name>mota-core</name>
     <message>
@@ -3835,6 +3898,10 @@ https://www.transifex.com/mota-project/mota-project-translations</translation>
         <translation>Aktiver swifttx, vis bekræftelser for låste transaktioner (bool, default: %s)</translation>
     </message>
     <message>
+        <source>Enable use of automated obfuscation for funds stored in this wallet (0-1, default: %u)</source>
+        <translation>Slå automatisk tilsløring til for alle midler i denne tegebog (0-1, default: %u)</translation>
+    </message>
+    <message>
         <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
         <translation>Opgiv regression test mode, der bruger en særlig kæde, hvor blokke kan løses med det samme</translation>
     </message>
@@ -3859,12 +3926,12 @@ https://www.transifex.com/mota-project/mota-project-translations</translation>
         <translation>Udfør en kommando når den bedste blok ændres (%s in cmd erstattes med blok hashen)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Gebyrer (in PIV/kb) lavere end dette betragtes som et nul-gebyr for at videresende (default: %s)</translation>
+        <source>Fees (in MOTA/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Gebyrer (in MOTA/kb) lavere end dette betragtes som et nul-gebyr for at videresende (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Gebyrer (in PIV/kb) lavere end dette betragtes som et nul-gebyr for at oprette en transaktion (default: %s)</translation>
+        <source>Fees (in MOTA/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Gebyrer (in MOTA/kb) lavere end dette betragtes som et nul-gebyr for at oprette en transaktion (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -3921,6 +3988,10 @@ https://www.transifex.com/mota-project/mota-project-translations</translation>
     <message>
         <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
         <translation>Output debug information (default: %u, supplying &lt;category&gt; er valgfri)</translation>
+    </message>
+    <message>
+        <source>Provide liquidity to Obfuscation by infrequently mixing coins on a continual basis (0-100, default: %u, 1=very frequent, high fees, 100=very infrequent, low fees)</source>
+        <translation>Tilfør tilsløring likviditet  ved at tilføje flere MOTA løbende (0-100, default:%u, 1=meget hyppigt, høje gebyrer, 100=sjældent, lave gebyrer)</translation>
     </message>
     <message>
         <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect)</source>
@@ -3995,12 +4066,12 @@ For eksempel: alertnotify=Echo %% | mail - s "MOTA ALARM!" e-mail@administrator.
         <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret designeret indestående for at gennemføre denne transaktion.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 25000 PIV.</source>
-        <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret  ikke-designeret indestående for at gennemføre denne transaktion, der ikke ækvivalerer 25000 PIV.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 MOTA.</source>
+        <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret  ikke-designeret indestående for at gennemføre denne transaktion, der ikke ækvivalerer 10000 MOTA.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 25000 PIV.</source>
-        <translation>Det var ikke muligt at allokere tilstrækkelige midler til denne transaktion som er forskellig fra 25000 PIV.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 MOTA.</source>
+        <translation>Det var ikke muligt at allokere tilstrækkelige midler til denne transaktion som er forskellig fra 10000 MOTA.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4287,8 +4358,8 @@ For eksempel: alertnotify=Echo %% | mail - s "MOTA ALARM!" e-mail@administrator.
         <translation>Læsning af blokken mislykkedes</translation>
     </message>
     <message>
-        <source>Fee (in PIV/kB) to add to transactions you send (default: %s)</source>
-        <translation>Gebyr (i PIV/kB) som skal tilføjes transaktionen der sendes (default: %s)</translation>
+        <source>Fee (in MOTA/kB) to add to transactions you send (default: %s)</source>
+        <translation>Gebyr (i MOTA/kB) som skal tilføjes transaktionen der sendes (default: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -4421,6 +4492,10 @@ For eksempel: alertnotify=Echo %% | mail - s "MOTA ALARM!" e-mail@administrator.
     <message>
         <source>Attempt to force blockchain corruption recovery</source>
         <translation>Forsøg at gennemtvinge reparation af korrumperet blokkæde</translation>
+    </message>
+    <message>
+        <source>Keep N MOTA anonymized (default: %u)</source>
+        <translation>Behold N MOTA anonymiserede (default: %u)</translation>
     </message>
     <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
@@ -4565,6 +4640,10 @@ For eksempel: alertnotify=Echo %% | mail - s "MOTA ALARM!" e-mail@administrator.
     <message>
         <source>Obfuscation is idle.</source>
         <translation>Tilsløringssystem ledigt</translation>
+    </message>
+    <message>
+        <source>Obfuscation options:</source>
+        <translation>Tilsløringsmuligheder</translation>
     </message>
     <message>
         <source>Obfuscation request complete:</source>
@@ -4869,6 +4948,10 @@ For eksempel: alertnotify=Echo %% | mail - s "MOTA ALARM!" e-mail@administrator.
     <message>
         <source>Upgrade wallet to latest format</source>
         <translation>Opdater tegnebogen til det nyeste format</translation>
+    </message>
+    <message>
+        <source>Use N separate masternodes to anonymize funds  (2-8, default: %u)</source>
+        <translation>Brug N forskellige masternoder for at anonymisere saldi (2-8, default: %u)</translation>
     </message>
     <message>
         <source>Use OpenSSL (https) for JSON-RPC connections</source>
