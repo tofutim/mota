@@ -299,8 +299,8 @@ endif
 
 RES_IMAGES = \
   qt/res/images/about.png \
-  qt/res/images/splash.jpg \
-  qt/res/images/splash_testnet.jpg \
+  qt/res/images/splash.png \
+  qt/res/images/splash_testnet.png \
   qt/res/images/mota_logo_horizontal.png \
   qt/res/images/downArrow.png \
   qt/res/images/downArrow_small.png \
