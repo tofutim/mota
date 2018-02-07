@@ -1948,12 +1948,12 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>Use 2 separate masternodes to mix funds up to 10000 MOTA</source>
+        <source>Use 2 separate masternodes to mix funds up to 200000 MOTA</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>Use 8 separate masternodes to mix funds up to 10000 MOTA</source>
+        <source>Use 8 separate masternodes to mix funds up to 200000 MOTA</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1963,12 +1963,12 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>This option is the quickest and will cost about ~0.025 MOTA to anonymize 10000 MOTA</source>
+        <source>This option is the quickest and will cost about ~0.025 MOTA to anonymize 200000 MOTA</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>This option is moderately fast and will cost about 0.05 MOTA to anonymize 10000 MOTA</source>
+        <source>This option is moderately fast and will cost about 0.05 MOTA to anonymize 200000 MOTA</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1978,7 +1978,7 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>0.1 MOTA per 10000 MOTA you anonymize.</source>
+        <source>0.1 MOTA per 200000 MOTA you anonymize.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5261,12 +5261,12 @@ for example: alertnotify=echo %%s | mail -s &quot;MOTA Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+2"/>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 MOTA.</source>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 200000 MOTA.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 MOTA.</source>
+        <source>Unable to locate enough funds for this transaction that are not equal 200000 MOTA.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

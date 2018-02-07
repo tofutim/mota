@@ -1038,32 +1038,32 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Veuillez sélectionner un niveau de confidentialité.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 MOTA</source>
-        <translation>Utiliser 2 masternodes différentes pour mélanger les fonds jusqu'a 10000 MOTA</translation>
+        <source>Use 2 separate masternodes to mix funds up to 200000 MOTA</source>
+        <translation>Utiliser 2 masternodes différentes pour mélanger les fonds jusqu'a 200000 MOTA</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 MOTA</source>
-        <translation>Utiliser 8 masternodes différentes pour mélanger les fonds jusqu'a 10000 MOTA</translation>
+        <source>Use 8 separate masternodes to mix funds up to 200000 MOTA</source>
+        <translation>Utiliser 8 masternodes différentes pour mélanger les fonds jusqu'a 200000 MOTA</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Utiliser 16 masternodes différentes</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 MOTA to anonymize 10000 MOTA</source>
-        <translation>Cette option est la plus rapide, et coutera ~0.025 MOTA pour anonymiser 10000 MOTA</translation>
+        <source>This option is the quickest and will cost about ~0.025 MOTA to anonymize 200000 MOTA</source>
+        <translation>Cette option est la plus rapide, et coutera ~0.025 MOTA pour anonymiser 200000 MOTA</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 MOTA to anonymize 10000 MOTA</source>
-        <translation>Cette option est moyennement rapide, et coutera 0.05 MOTA pour anonymiser 10000 MOTA</translation>
+        <source>This option is moderately fast and will cost about 0.05 MOTA to anonymize 200000 MOTA</source>
+        <translation>Cette option est moyennement rapide, et coutera 0.05 MOTA pour anonymiser 200000 MOTA</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Il s'agit de l'option la plus lente est la plus sécurisé. Utiliser l'anonymat maximum coutera</translation>
     </message>
     <message>
-        <source>0.1 MOTA per 10000 MOTA you anonymize.</source>
-        <translation>0.1 MOTA par 10000 MOTA vous anonymisez.</translation>
+        <source>0.1 MOTA per 200000 MOTA you anonymize.</source>
+        <translation>0.1 MOTA par 200000 MOTA vous anonymisez.</translation>
     </message>
     </context>
 <context>

@@ -1442,24 +1442,24 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Vyberte úrpvěň ochrany soukromí</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 MOTA</source>
-        <translation>Použí 2 oddělené masternody k promíchání prostředků až do 10000 MOTA</translation>
+        <source>Use 2 separate masternodes to mix funds up to 200000 MOTA</source>
+        <translation>Použí 2 oddělené masternody k promíchání prostředků až do 200000 MOTA</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Použít 16 oddělených masternodů</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 MOTA to anonymize 10000 MOTA</source>
-        <translation>Tato možnost je nejrychleší a bude stát zhruba ~0.025 MOTA pro anonymizaci 10000 MOTA</translation>
+        <source>This option is the quickest and will cost about ~0.025 MOTA to anonymize 200000 MOTA</source>
+        <translation>Tato možnost je nejrychleší a bude stát zhruba ~0.025 MOTA pro anonymizaci 200000 MOTA</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Toto je nejpomalejší a nejvíce bezpečná volba. Použití maximalní anonymity bude stát</translation>
     </message>
     <message>
-        <source>0.1 MOTA per 10000 MOTA you anonymize.</source>
-        <translation>0.1 MOTA za 10000 MOTA anonymizujete.</translation>
+        <source>0.1 MOTA per 200000 MOTA you anonymize.</source>
+        <translation>0.1 MOTA za 200000 MOTA anonymizujete.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
