@@ -75,7 +75,7 @@ enum AvailableCoinsType {
     ONLY_DENOMINATED = 2,
     ONLY_NOT200000IFMN = 3,
     ONLY_NONDENOMINATED_NOT200000IFMN = 4, // ONLY_NONDENOMINATED and not 200000 MOTA at the same time
-    ONLY_10000 = 5                        // find masternode outputs including locked ones (use with caution)
+    ONLY_200000 = 5                        // find masternode outputs including locked ones (use with caution)
 };
 
 struct CompactTallyItem {
